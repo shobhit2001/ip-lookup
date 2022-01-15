@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #22a6b3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Neucha', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+loader-container{
+    display: flex;
+}
+
+.loader{
+    width: 1opx;
+    height: 35px;
+    background: #ffffff;
+    margin: 5px;
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+.main-container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip-display,
+.location-display, 
+.geo-display {
+    color: whitesmoke;
+    margin: 0.8rem;
+    font-size: calc(2rem + 1vw);
+}
+
+.lookup-btn{
+    border: none;
+    background: #30336b;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 250ms linear;
+}
+
+
+.lookup-btn:hover{
+    opacity: 0.8;
+}
+
+@keyframes loading{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
